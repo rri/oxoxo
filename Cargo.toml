@@ -1,7 +1,7 @@
 [package]
 name = "oxoxo"
 version = "0.1.0"
-description = "oxo is a general-purpose programming language"
+description = "oxo is a general-purpose programming toolchain for the cloud"
 authors = ["Ramnath R Iyer <rri@oxo-lang.org>"]
 edition = "2021"
 keywords = ["compilers"]
@@ -13,6 +13,7 @@ license = "Apache-2.0"
 
 [dependencies]
 anyhow = { version = "1.0" }
+clap = { version = "4.5", features = ["cargo", "derive", "env", "unicode"] }
 thiserror = { version = "1.0" }
 
 [lib]
