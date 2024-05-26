@@ -9,3 +9,9 @@
 </p>
 
 ---
+
+<p align="center">
+    a general-purpose programming toolchain for the cloud
+</p>
+
+---
