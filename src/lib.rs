@@ -4,4 +4,5 @@
 #![deny(missing_docs)]
 
 pub mod app;
+pub mod cmd;
 pub mod err;

@@ -1,6 +1,6 @@
 //! Top-level application and associated utilities.
 
-use crate::err::SysErr;
+use crate::{cmd::repl, err::SysErr};
 use clap::{Parser, Subcommand};
 
 /// Application entry-point.
@@ -35,6 +35,8 @@ impl Default for App {
 impl App {
     /// Run the application logic.
     pub fn run(&self) -> Result<(), SysErr> {
-        Ok(())
+        match self.cmd {
+            Cmd::Repl => repl(),
+        }
     }
 }
