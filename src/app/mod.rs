@@ -26,6 +26,12 @@ impl App {
     }
 }
 
+impl Default for App {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl App {
     /// Run the application logic.
     pub fn run(&self) -> Result<(), SysErr> {
