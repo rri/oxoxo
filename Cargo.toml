@@ -1,0 +1,19 @@
+[package]
+name = "oxoxo"
+version = "0.1.0"
+description = "oxo is a general-purpose programming language"
+authors = ["Ramnath R Iyer <rri@oxo-lang.org>"]
+edition = "2021"
+keywords = ["compilers"]
+categories = ["compilers"]
+readme = "README.md"
+homepage = "https://oxo-lang.org"
+repository = "https://github.com/rri/oxoxo"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = { version = "1.0" }
+thiserror = { version = "1.0" }
+
+[lib]
+name = "oxo"
